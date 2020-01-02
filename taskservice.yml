@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: taskservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/law_app
+    username: ssk
+    password: ssk
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8083
+  
+    
+#Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
